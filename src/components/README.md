@@ -1,0 +1,1 @@
+## Meu teste de uma publicação npm de componente React
