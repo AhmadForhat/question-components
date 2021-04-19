@@ -1,16 +1,24 @@
 import * as React from 'react'
 
+import {ButtonStyle} from './styles'
+
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  title: string,
+  children: React.ReactNode,
+  color: string,
+  backgroundColor: string,
 }
 
 export const Button: React.FC<ButtonProps> = ({
-  title,
+  children,
+  backgroundColor,
+  color,
   ...rest
 }) => (
-    <>
-    <button  {...rest}>
-      {title}
-  </button>
-  </>
+  <ButtonStyle  
+    color={color}
+    backgroundColor={backgroundColor}
+    {...rest}
+  >
+      {children}
+  </ButtonStyle>
 )

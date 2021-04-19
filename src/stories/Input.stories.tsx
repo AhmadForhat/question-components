@@ -17,5 +17,4 @@ InputText.args = {
   name: 'test',
   type: 'text',
   label: 'Meu texto',
-  value: 'testando!!!'
 };
